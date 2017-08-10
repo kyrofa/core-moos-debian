@@ -4,7 +4,7 @@ Maintainer: Kyle Fazzari <kyle@canonical.com>
 Build-Depends: cmake (>= 2.8.0),
                debhelper (>=9),
                quilt
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Section: libs
 Homepage: http://www.robots.ox.ac.uk/~mobile/MOOS/wiki/pmwiki.php/Main/HomePage
 Vcs-Git: https://github.com/themoos/core-moos.git
