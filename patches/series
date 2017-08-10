@@ -1,2 +1,3 @@
 add-install-config.patch
 add-shared-library.patch
+install-versioned-libs.patch

@@ -10,10 +10,10 @@ Homepage: http://www.robots.ox.ac.uk/~mobile/MOOS/wiki/pmwiki.php/Main/HomePage
 Vcs-Git: https://github.com/themoos/core-moos.git
 Vcs-Browser: https://github.com/themoos/core-moos
 
-Package: core-moos-dev
+Package: libmoos-dev
 Section: libdevel
 Architecture: any
-Depends: core-moos (= ${binary:Version}), ${misc:Depends}
+Depends: libmoos10 (= ${binary:Version}), ${misc:Depends}
 Description: Mission Oriented Operating Suite - development files
  Light, fast, cross-platform middleware for robotics. CoreMOOS is the most
  fundamental layer, providing a very robust network based communications
@@ -21,10 +21,20 @@ Description: Mission Oriented Operating Suite - development files
  MOOSDB) which for very little effort lets you build applications which
  communicate with each other. 
 
-Package: core-moos
+Package: libmoos10
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Mission Oriented Operating Suite - shared libraries
+ Light, fast, cross-platform middleware for robotics. CoreMOOS is the most
+ fundamental layer, providing a very robust network based communications
+ architecture (two libraries and a lightweight communications hub called
+ MOOSDB) which for very little effort lets you build applications which
+ communicate with each other.
+
+Package: moos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Mission Oriented Operating Suite - binaries
  Light, fast, cross-platform middleware for robotics. CoreMOOS is the most
  fundamental layer, providing a very robust network based communications
  architecture (two libraries and a lightweight communications hub called

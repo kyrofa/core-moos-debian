@@ -1,0 +1,17 @@
+Install versioned libs
+--- a/Core/libMOOS/CMakeLists.txt
++++ b/Core/libMOOS/CMakeLists.txt
+@@ -240,6 +240,13 @@
+ # Name both static and shared libs the same
+ set_target_properties(${LIBNAME}_static PROPERTIES OUTPUT_NAME ${LIBNAME})
+ 
++# Version both static and shared libs
++set_target_properties(${LIBNAME} PROPERTIES
++	VERSION ${PACKAGE_VERSION}
++	SOVERSION ${PACKAGE_VERSION_MAJOR})
++set_target_properties(${LIBNAME}_static PROPERTIES
++	VERSION ${PACKAGE_VERSION}
++	SOVERSION ${PACKAGE_VERSION_MAJOR})
+ 
+ #######################################
+ # install headers
