@@ -1,6 +1,7 @@
 Source: core-moos
 Priority: optional
 Maintainer: Kyle Fazzari <kyle@canonical.com>
+Uploaders: Kamal Mostafa <kamal@whence.com>
 Build-Depends: cmake (>= 2.8.0),
                debhelper (>=9)
 Standards-Version: 4.1.0
